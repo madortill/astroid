@@ -1,75 +1,65 @@
 <template>
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      </div>
-
+  <div id="app">
+    <start-screen v-if="page === 1" @switch-screen="switchPage"></start-screen>
+    <star-wars v-else-if="page === 2" @switch-screen="switchPage"></star-wars>
+    <pou-screen v-else-if="page=== 3" @grow-up="growUp" :astroid="age"></pou-screen>
+    <game v-else-if="page===4"></game>
+  </div>
 </template>
-
+ 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StartScreen from '@/components/StartScreen.vue';
+import StarWars from '@/components/StarWars.vue';
+import PouScreen from '@/components/PouScreen.vue';
+import Game from '@/components/Game.vue';
+
+export default {
+  name: "app",
+  data() {
+    return {
+      page: 1,
+      age: "baby" , 
+    }
+  },
+  components: {
+    StartScreen , 
+    StarWars,
+    PouScreen,
+    Game
+  },
+  methods: {
+     switchPage(Page) {
+      this.page = Page;
+    },
+    growUp(currAge) {
+      if (currAge === "done") {
+        this.switchPage(this.page+1);
+      } else {
+        this.age = currAge;
+      }
+    }
+  }
+}
+
 </script>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+<style>
+@font-face {
+  font-family: "amnon";
+  src: url(./assets/fonts/amnon.ttf);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+@font-face {
+  font-family: "kshafim";
+  src: url(./assets/fonts/kshafim.ttf);
 }
 
-nav {
+
+#app {
+  direction: rtl;
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+	height: 100%;
+  font-family: "kshafim";
+  overflow: hidden;
 }
 </style>
