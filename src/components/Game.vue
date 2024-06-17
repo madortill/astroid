@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div id="game">
     <div class="instructions" v-if="!readInstructions">
       <div>
