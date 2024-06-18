@@ -8,10 +8,10 @@
 </template>
  
 <script>
-import StartScreen from '../components/StartScreen.vue';
-import StarWars from '../components/StarWars.vue';
-import PouScreen from '../components/PouScreen.vue';
-import Game from '../components/Game.vue';
+import StartScreen from '@/components/StartScreen.vue';
+import StarWars from '@/components/StarWars.vue';
+import PouScreen from '@/components/PouScreen.vue';
+import Game from '@/components/Game.vue';
 
 export default {
   name: "app",
