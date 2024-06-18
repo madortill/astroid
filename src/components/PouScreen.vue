@@ -44,7 +44,7 @@
   </div>
 </template>
 <script>
-import IconsForPou from 'src/components/IconsForPou.vue';
+import IconsForPou from '@/components/IconsForPou.vue';
 export default {
   name: "pou-screen",
   props: ['astroid'],
