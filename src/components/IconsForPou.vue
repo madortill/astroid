@@ -54,7 +54,7 @@ export default {
     right: 15vw;
     height: 11vw;
     width: 13vw;
-     background-image: url(../assets/media/pouScreen/heart.png);
+    background-image: url(../assets/media/pouScreen/heart.png);
     background-size: 100% 100%;
 	background-repeat: no-repeat;
  }
