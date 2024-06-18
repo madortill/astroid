@@ -200,9 +200,10 @@ touchMove(ev) {
   },
   computed: {
     playerAnimation() {
-      return `../../../public/animations/${this.astroid}/${this.astroid}.html`;
+      return `../../public/animations/${this.astroid}/${this.astroid}.html`;
     },
     playerImg() {
+      console.log(`../assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`)
       return `../assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
     },
     backgroundImg() {
