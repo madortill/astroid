@@ -1,7 +1,7 @@
 <template>
   <div id="pou-screen" :style="{ 'background-image': 'url(' + backgroundImg + ')' }">
     <iframe class="animation2" v-show="showAnimation2" :src="playerAnimation"></iframe>
-    <iframe class="animation" v-if="showAnimation1" src="../../public/animations/preloader/preloader.html"></iframe>
+    <iframe class="animation" v-if="showAnimation1" src="public/animations/preloader/preloader.html"></iframe>
     <div v-else>
       <icons-for-pou :age="age" :level="level" v-show="!showAnimation2"></icons-for-pou>
        <audio ref="audio">
