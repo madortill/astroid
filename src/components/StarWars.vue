@@ -6,7 +6,7 @@
           <div class="textToStart">לחצ/י עליי להתחלה</div>
         </div>
         <audio ref="audio" loop>
-        <source src="src/assets/audio/starwars.mp3" type="audio/mp3">
+        <source src="../assets/audio/starwars.mp3" type="audio/mp3">
         </audio>
         <div class="text" v-show="beforeText && didInteract">לפני שנים רבות...</div>
         <img src="../assets/media/startScreen/starwars-logo.png" id="logo" v-show="!beforeText" />
