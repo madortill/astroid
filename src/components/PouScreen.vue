@@ -200,16 +200,16 @@ touchMove(ev) {
   },
   computed: {
     playerAnimation() {
-      return `../public/animations/${this.astroid}/${this.astroid}.html`;
+      return `../../../public/animations/${this.astroid}/${this.astroid}.html`;
     },
     playerImg() {
-      return `@/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
+      return `../assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
     },
     backgroundImg() {
-      return `@/assets/media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
+      return `../assets/media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
     },
     playerItem() {
-      return `@/assets/media/pouScreen/${this.astroid}/item.png`;
+      return `../assets/media/pouScreen/${this.astroid}/item.png`;
     }
   },
   created() {
