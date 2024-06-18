@@ -206,7 +206,7 @@ touchMove(ev) {
       return `../src/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
     },
     backgroundImg() {
-      return `../src/assets/media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
+      return `C:/Users/MadorTil/Documents/astroid/src/assets/media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
     },
     playerItem() {
       return `../src/assets/media/pouScreen/${this.astroid}/item.png`;
