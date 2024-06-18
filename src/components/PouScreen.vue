@@ -200,7 +200,7 @@ touchMove(ev) {
   },
   computed: {
     playerAnimation() {
-      return `../../public/animations/${this.astroid}/${this.astroid}.html`;
+      return `C:/Users/MadorTil/Documents/astroid/public/animations/${this.astroid}/${this.astroid}.html`;
     },
     playerImg() {
       return `../src/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
